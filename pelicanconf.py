@@ -4,7 +4,21 @@ from __future__ import unicode_literals
 
 AUTHOR = 'SciPy-SP'
 SITENAME = 'Observatório do SciPy-SP'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
+
+
+ROBOTS = 'index, follow'
+
+# Creative Commons Licensing
+CC_LICENSE = {
+        'name': 'Creative Commons Attribution-ShareAlike',
+        'version': '4.0',
+        'slug': 'by-sa'
+}
+COPYRIGHT_YEAR = 2016
+DISPLAY_PAGES_ON_MENU = False
+MAIN_MENU = True
+
 
 PATH = 'content'
 
@@ -20,16 +34,25 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Materiais', ''),
+    ('SciPy', 'http://scipy.org/'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('github', 'https://github.com/scipy-sp/'),
+    ('twitter', 'https://twitter.com/scipysp'),
+    ('facebook', 'https://www.facebook.com/SciPySP/'),
+)
 
 DEFAULT_PAGINATION = 10
+MENUITEMS = (('Arquivo', '/archives.html'),
+	     ('Categorias', '/categories.html'),
+	     ('Tags', '/tags.html'),)
+
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = "themes/Flex"

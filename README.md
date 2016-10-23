@@ -22,18 +22,22 @@ Instalando e Rodando
 
 - Rode o projeto
 
-		$ make devserver
+		$ make clean html serve
 
 Abra o navegador em [localhost:8000](http://localhost:8000) para ver o conteúdo gerado.
-
-- Pare o servidor quando terminar de trabalhar no projeto
-
-		$ make stopserver
 
 Contribuindo
 ------------
 
 Para contribuir com o projeto veja o guia de [Contribuição](CONTRIBUTING.md).
+
+Fazendo o deploy
+----------------
+
+Para fazer o deploy, você precisa ter permissão de escrita no repositório oficial, e fazer:
+
+		$ make github
+
 
 Links Úteis
 -----------
